@@ -1,3 +1,34 @@
-PODFILE CHECKSUM: 25c6b0044722bb7bb70d5ade1d3cc324186b0c74
+PODS:
+  - Alamofire (4.8.1)
+  - DZNEmptyDataSet (1.8.1)
+  - NVActivityIndicatorView (4.6.1):
+    - NVActivityIndicatorView/Presenter (= 4.6.1)
+  - NVActivityIndicatorView/Presenter (4.6.1)
+  - SCLAlertView (0.8)
+  - UIScrollView-InfiniteScroll (1.1.0)
+
+DEPENDENCIES:
+  - Alamofire (= 4.8.1)
+  - DZNEmptyDataSet (= 1.8.1)
+  - NVActivityIndicatorView (= 4.6.1)
+  - SCLAlertView (~> 0.8)
+  - UIScrollView-InfiniteScroll (= 1.1.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - DZNEmptyDataSet
+    - NVActivityIndicatorView
+    - SCLAlertView
+    - UIScrollView-InfiniteScroll
+
+SPEC CHECKSUMS:
+  Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
+  DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
+  NVActivityIndicatorView: 4ca19fccc84595a78957336a086d00a49be6ce61
+  SCLAlertView: 6a77bb2edfc65e04dbe57725546cb4107a506b85
+  UIScrollView-InfiniteScroll: 3ef456bcbe759c19f510a383cff96e6647c98c98
+
+PODFILE CHECKSUM: d2a4c40e7259f8b4e9a4c0d9067f932bd5da3ee1
 
 COCOAPODS: 1.6.1
