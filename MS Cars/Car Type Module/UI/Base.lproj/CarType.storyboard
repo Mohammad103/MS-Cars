@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JDp-34-JER">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="Ij7-ei-aoY">
+            <objects>
+                <navigationController id="JDp-34-JER" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7lm-5K-yaJ">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.1058823529" green="0.27450980390000002" blue="0.56862745100000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="15"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Ga2-jB-sLj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oyv-wO-9mW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-695" y="134"/>
+        </scene>
+        <!--Manufacturers-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ManufacturersViewController" id="BYZ-38-t0r" customClass="ManufacturersViewController" customModule="MS_Cars" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="oOo-SB-YP3">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="separatorColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ManufacturerTableViewCell" rowHeight="50" id="jdR-P0-UqN" customClass="ManufacturerTableViewCell" customModule="MS_Cars" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jdR-P0-UqN" id="N0k-Qp-XU0">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="49.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="urb-zQ-LH7">
+                                                    <rect key="frame" x="15" y="15.5" width="319" height="18.5"/>
+                                                    <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="15"/>
+                                                    <color key="textColor" red="0.28235294117647058" green="0.28235294117647058" blue="0.28235294117647058" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="urb-zQ-LH7" firstAttribute="trailing" secondItem="N0k-Qp-XU0" secondAttribute="trailingMargin" id="2OL-3A-esa"/>
+                                                <constraint firstItem="urb-zQ-LH7" firstAttribute="leading" secondItem="N0k-Qp-XU0" secondAttribute="leadingMargin" id="USC-kM-iDr"/>
+                                                <constraint firstItem="urb-zQ-LH7" firstAttribute="centerY" secondItem="N0k-Qp-XU0" secondAttribute="centerY" id="YhD-iy-FII"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="titleLabel" destination="urb-zQ-LH7" id="xbi-uz-ZBd"/>
+                                            <segue destination="IDu-yv-paT" kind="show" identifier="ManufacturerTypeSegue" id="2HP-K3-tEW"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="w1X-NW-gHv"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="XC7-9u-434"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oOo-SB-YP3" secondAttribute="trailing" id="1zE-xm-amq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="oOo-SB-YP3" secondAttribute="bottom" id="UB1-fG-d58"/>
+                            <constraint firstItem="oOo-SB-YP3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="lZ2-mM-wRy"/>
+                            <constraint firstItem="oOo-SB-YP3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="sb0-pz-1Dr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Manufacturers" id="9bz-e0-T1Z">
+                        <barButtonItem key="backBarButtonItem" title=" " id="7Rd-sp-xQn"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="oOo-SB-YP3" id="tyt-Dv-ztr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="96.799999999999997" y="133.5832083958021"/>
+        </scene>
+        <!--Types-->
+        <scene sceneID="5nC-Vh-8nx">
+            <objects>
+                <viewController storyboardIdentifier="ManufacturerTypesViewController" id="IDu-yv-paT" customClass="ManufacturerTypesViewController" customModule="MS_Cars" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LyI-M4-UTG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="c1Z-e4-Cjd">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="separatorColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ManufacturerTypeTableViewCell" rowHeight="50" id="53P-M4-Y5q" customClass="ManufacturerTypeTableViewCell" customModule="MS_Cars" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="53P-M4-Y5q" id="dUP-Qc-Qus">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="49.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ves-qM-uVK">
+                                                    <rect key="frame" x="15" y="15.5" width="345" height="18.5"/>
+                                                    <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="15"/>
+                                                    <color key="textColor" red="0.28235294119999998" green="0.28235294119999998" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="ves-qM-uVK" firstAttribute="centerY" secondItem="dUP-Qc-Qus" secondAttribute="centerY" id="EKd-ww-5JO"/>
+                                                <constraint firstItem="ves-qM-uVK" firstAttribute="leading" secondItem="dUP-Qc-Qus" secondAttribute="leadingMargin" id="LBJ-eE-C2n"/>
+                                                <constraint firstItem="ves-qM-uVK" firstAttribute="trailing" secondItem="dUP-Qc-Qus" secondAttribute="trailingMargin" id="YZ5-Ix-e4H"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="titleLabel" destination="ves-qM-uVK" id="Afe-Kf-ASY"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="IDu-yv-paT" id="u7G-xz-vWe"/>
+                                    <outlet property="delegate" destination="IDu-yv-paT" id="5LN-Pz-EOP"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="c1Z-e4-Cjd" firstAttribute="leading" secondItem="sz3-By-lzQ" secondAttribute="leading" id="HZC-s5-fB4"/>
+                            <constraint firstItem="sz3-By-lzQ" firstAttribute="trailing" secondItem="c1Z-e4-Cjd" secondAttribute="trailing" id="XL0-r6-4T5"/>
+                            <constraint firstItem="c1Z-e4-Cjd" firstAttribute="top" secondItem="sz3-By-lzQ" secondAttribute="top" id="f5e-bF-dho"/>
+                            <constraint firstItem="sz3-By-lzQ" firstAttribute="bottom" secondItem="c1Z-e4-Cjd" secondAttribute="bottom" id="th8-Nh-Dkp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="sz3-By-lzQ"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Types" id="hlD-An-lGl"/>
+                    <connections>
+                        <outlet property="tableView" destination="c1Z-e4-Cjd" id="alU-3E-GjA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ySs-O5-MOR" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="926" y="134"/>
+        </scene>
+    </scenes>
+</document>
